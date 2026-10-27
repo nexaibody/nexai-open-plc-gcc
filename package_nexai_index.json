@@ -1,0 +1,103 @@
+{
+  "_comment": [
+    "NexAi S32K — arduino-cli board manager paket indeksi (public).",
+    "Yayin adresi: https://nexaibody.github.io/nexai-open-plc-gcc/package_nexai_index.json",
+    "Bu adres Customer_Open_PLC_S32K344/manifest.json target.boardManagerUrl'e gomulu - DEGISTIRMEYIN.",
+    "",
+    "Girdileri elle yazmayin: arduino-platform/tools/make-platform-archive.sh <arm-gnu-surumu>",
+    "platforms[] ve tools[] girdilerini ekler; eski girdiler SILINMEZ (arduino-cli onlari cozebilmeli).",
+    "Bkz. docs/gcc_compiler_method.md §4.3."
+  ],
+  "packages": [
+    {
+      "name": "nexai",
+      "maintainer": "NexAi",
+      "websiteURL": "https://github.com/nexaibody/nexai-open-plc-gcc",
+      "email": "",
+      "help": {
+        "online": "https://github.com/nexaibody/nexai-open-plc-gcc"
+      },
+      "platforms": [
+        {
+          "name": "NexAi S32K Boards",
+          "architecture": "s32k",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/nexaibody/nexai-open-plc-gcc"
+          },
+          "url": "https://github.com/nexaibody/nexai-open-plc-gcc/releases/download/nexai-s32k-1.0.0/nexai-s32k-1.0.0.tar.bz2",
+          "archiveFileName": "nexai-s32k-1.0.0.tar.bz2",
+          "checksum": "SHA-256:3a77604bb8e3e8a96d1ad94988c0829f84b44f90ffa58c8d073e419ced1d3611",
+          "size": "6000",
+          "boards": [
+            {
+              "name": "NXP S32K344 Custom Board"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "nexai",
+              "name": "nexai-arm-none-eabi-gcc",
+              "version": "14.2.rel1"
+            }
+          ]
+        },
+        {
+          "name": "NexAi S32K Boards",
+          "architecture": "s32k",
+          "version": "1.0.1",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/nexaibody/nexai-open-plc-gcc"
+          },
+          "url": "https://github.com/nexaibody/nexai-open-plc-gcc/releases/download/nexai-s32k-1.0.1/nexai-s32k-1.0.1.tar.bz2",
+          "archiveFileName": "nexai-s32k-1.0.1.tar.bz2",
+          "checksum": "SHA-256:c17bd662da3d328ba88ef404bf2f825d78699fcd7a6b8deb737ff307a51a6b05",
+          "size": "6164",
+          "boards": [
+            {
+              "name": "NXP S32K344 Custom Board"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "nexai",
+              "name": "nexai-arm-none-eabi-gcc",
+              "version": "14.2.rel1"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "nexai-arm-none-eabi-gcc",
+          "version": "14.2.rel1",
+          "systems": [
+            {
+              "host": "x86_64-mingw32",
+              "url": "https://github.com/nexaibody/nexai-open-plc-gcc/releases/download/gcc-14.2.rel1/arm-gnu-toolchain-14.2.rel1-mingw-w64-x86_64-arm-none-eabi-rooted.zip",
+              "archiveFileName": "arm-gnu-toolchain-14.2.rel1-mingw-w64-x86_64-arm-none-eabi-rooted.zip",
+              "checksum": "SHA-256:d7a717fa8ae7e92f884b6fe1e3e297018e5fb420a26235232d58cb7c53d363c7",
+              "size": "332430533"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://developer.arm.com/-/media/Files/downloads/gnu/14.2.rel1/binrel/arm-gnu-toolchain-14.2.rel1-x86_64-arm-none-eabi.tar.xz",
+              "archiveFileName": "arm-gnu-toolchain-14.2.rel1-x86_64-arm-none-eabi.tar.xz",
+              "checksum": "SHA-256:62a63b981fe391a9cbad7ef51b17e49aeaa3e7b0d029b36ca1e9c3b2a9b78823",
+              "size": "149739784"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://developer.arm.com/-/media/Files/downloads/gnu/14.2.rel1/binrel/arm-gnu-toolchain-14.2.rel1-aarch64-arm-none-eabi.tar.xz",
+              "archiveFileName": "arm-gnu-toolchain-14.2.rel1-aarch64-arm-none-eabi.tar.xz",
+              "checksum": "SHA-256:87330bab085dd8749d4ed0ad633674b9dc48b237b61069e3b481abd364d0a684",
+              "size": "151967360"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
